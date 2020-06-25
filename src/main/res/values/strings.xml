@@ -11,4 +11,12 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="add_a_product_below">Add a product below</string>
     <string name="add_to_inventory">Add to Inventory</string>
+    <string name="button_1">Air Horn</string>
+    <string name="button_2">Wilhelm</string>
+    <string name="button_3">Cabal</string>
+    <string name="button_4">McCree</string>
+    <string name="button_5">Game Over</string>
+    <string name="button_6">Hive</string>
+    <string name="button_7">Mom</string>
+    <string name="button_8">Tranquility</string>
 </resources>
