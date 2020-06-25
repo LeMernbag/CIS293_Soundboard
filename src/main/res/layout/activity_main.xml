@@ -19,51 +19,118 @@
             <TableRow>
 
                 <Button
-                    android:id="@+id/btnWilhelm"
+                    android:id="@+id/button1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_column="0"
                     android:background="@color/colorPrimary"
                     android:padding="20dp"
+                    android:text="@string/button_1"
                     android:layout_margin="10dp"
-                    android:text="Wilhelm"
-                    android:textColor="#ffffff" />
+                    android:textColor="#ffffff"
+                    android:onClick="playSound"/>
 
                 <Button
-                    android:id="@+id/btn_click_me"
+                    android:id="@+id/button2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_column="0"
                     android:background="@color/colorPrimary"
                     android:padding="20dp"
                     android:layout_margin="10dp"
-                    android:text="Air Horn"
-                    android:textColor="#ffffff" />
+                    android:text="@string/button_2"
+                    android:textColor="#ffffff"
+                    android:onClick="playSound" />
             </TableRow>
 
             <TableRow>
                 <Button
-                    android:id="@+id/btnSound3"
+                    android:id="@+id/button3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_column="0"
                     android:background="@color/colorPrimary"
                     android:padding="20dp"
                     android:layout_margin="10dp"
-                    android:text="Wilhelm"
-                    android:textColor="#ffffff" />
+                    android:text="Cabal"
+                    android:textColor="#ffffff"
+                    android:onClick="playSound"/>
 
                 <Button
-                    android:id="@+id/btnSound4"
+                    android:id="@+id/button4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_column="0"
                     android:background="@color/colorPrimary"
                     android:padding="20dp"
                     android:layout_margin="10dp"
-                    android:text="Air Horn"
-                    android:textColor="#ffffff" />
+                    android:text="McCree"
+                    android:textColor="#ffffff"
+                    android:onClick="playSound"/>
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:background="@color/colorPrimary"
+                    android:padding="20dp"
+                    android:layout_margin="10dp"
+                    android:text="Game Over"
+                    android:textColor="#ffffff"
+                    android:onClick="playSound"/>
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:background="@color/colorPrimary"
+                    android:padding="20dp"
+                    android:layout_margin="10dp"
+                    android:text="Hive"
+                    android:textColor="#ffffff"
+                    android:onClick="playSound"/>
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:background="@color/colorPrimary"
+                    android:padding="20dp"
+                    android:layout_margin="10dp"
+                    android:text="Mom"
+                    android:textColor="#ffffff"
+                    android:onClick="playSound"/>
+
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:background="@color/colorPrimary"
+                    android:padding="20dp"
+                    android:layout_margin="10dp"
+                    android:text="Tranquility"
+                    android:textColor="#ffffff"
+                    android:onClick="playSound"/>
             </TableRow>
 
         </TableLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:subtitle="Maren VanDenTop and Stacy Vaughn"
+        app:title="Soundboard App" />
 </androidx.constraintlayout.widget.ConstraintLayout>
