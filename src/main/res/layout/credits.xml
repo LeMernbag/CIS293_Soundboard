@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303030"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/menu_main"
+        app:title="Credits"
+        app:subtitle="Maren VanDenTop and Stacy Vaughn"/>
+
+    <TableLayout
+        android:id="@+id/credits"
+        android:layout_width="409dp"
+        android:layout_height="675dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="4dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2">
+
+        <TableRow>
+
+            <TextView
+                android:text="Wilhelm"
+                android:textColor="@color/cardview_light_background"
+                android:textStyle="bold" />
+
+            <TextView
+                android:paddingBottom="20dp"
+                android:textColor="@color/ltGray"
+                android:text="1951\nWilhelm Scream (stock sound)\nDistant Drums" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="Air Horn"
+                android:textColor="@color/cardview_light_background"
+                android:textStyle="bold" />
+
+            <TextView
+                android:paddingBottom="20dp"
+                android:textColor="@color/ltGray"
+                android:text="~1995\nCipha Sounds (stock sound)" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="Cabal"
+                android:textColor="@color/cardview_light_background"
+                android:textStyle="bold" />
+
+            <TextView
+                android:paddingBottom="20dp"
+                android:textColor="@color/ltGray"
+                android:text="2014\nDestiny (Bungie, Inc.)\nCommander Zavala, Cerberus Vae III" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="McCree"
+                android:textColor="@color/cardview_light_background"
+                android:textStyle="bold" />
+
+            <TextView
+                android:paddingBottom="20dp"
+                android:textColor="@color/ltGray"
+                android:text="2016\nOverwatch (Blizzard)\nMatthew Mercer" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="Game Over"
+                android:textColor="@color/cardview_light_background"
+                android:textStyle="bold" />
+
+            <TextView
+                android:paddingBottom="20dp"
+                android:textColor="@color/ltGray"
+                android:text="2004\nHalo 2 (Bungie, Inc.)\nJeff Steitzer" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="Hive"
+                android:textColor="@color/cardview_light_background"
+                android:textStyle="bold" />
+
+            <TextView
+                android:paddingBottom="20dp"
+                android:textColor="@color/ltGray"
+                android:text="2014\nDestiny (Bungie, Inc.)\nPeter Dinklage" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="Mom"
+                android:textColor="@color/cardview_light_background"
+                android:textStyle="bold" />
+
+            <TextView
+                android:paddingBottom="20dp"
+                android:textColor="@color/ltGray"
+                android:text="2012\nBorderlands 2 (Gearbox)\nRaison Varner" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="Tranquility"
+                android:textColor="@color/cardview_light_background"
+                android:textStyle="bold" />
+
+            <TextView
+                android:paddingBottom="20dp"
+                android:textColor="@color/ltGray"
+                android:text="2016\nOverwatch (Blizzard)\nFeodor Chin" />
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
