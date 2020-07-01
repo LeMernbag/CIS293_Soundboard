@@ -2,128 +2,136 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/cardview_dark_background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#303030">
+
     <TableLayout
         android:id="@+id/ll_main_layout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="407dp"
+        android:layout_height="614dp"
         android:gravity="center"
         android:orientation="vertical"
-        android:padding="25dp"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
-        android:stretchColumns="*">
+        <TableRow>
 
-            <TableRow>
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_margin="10dp"
+                android:background="@drawable/button"
+                android:onClick="playSound"
+                android:padding="40dp"
+                android:text="@string/button_1"
+                android:textColor="#ffffff" />
 
-                <Button
-                    android:id="@+id/button1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_column="0"
-                    android:background="@color/colorPrimary"
-                    android:padding="20dp"
-                    android:text="@string/button_1"
-                    android:layout_margin="10dp"
-                    android:textColor="#ffffff"
-                    android:onClick="playSound"/>
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_margin="10dp"
+                android:background="@drawable/button"
+                android:onClick="playSound"
+                android:padding="40dp"
+                android:text="@string/button_2"
+                android:textColor="#ffffff" />
+        </TableRow>
 
-                <Button
-                    android:id="@+id/button2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_column="0"
-                    android:background="@color/colorPrimary"
-                    android:padding="20dp"
-                    android:layout_margin="10dp"
-                    android:text="@string/button_2"
-                    android:textColor="#ffffff"
-                    android:onClick="playSound" />
-            </TableRow>
+        <TableRow>
 
-            <TableRow>
-                <Button
-                    android:id="@+id/button3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_column="0"
-                    android:background="@color/colorPrimary"
-                    android:padding="20dp"
-                    android:layout_margin="10dp"
-                    android:text="@string/button_3"
-                    android:textColor="#ffffff"
-                    android:onClick="playSound"/>
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_margin="10dp"
+                android:background="@drawable/button"
+                android:onClick="playSound"
+                android:padding="40dp"
+                android:text="Cabal"
+                android:textColor="#ffffff" />
 
-                <Button
-                    android:id="@+id/button4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_column="0"
-                    android:background="@color/colorPrimary"
-                    android:padding="20dp"
-                    android:layout_margin="10dp"
-                    android:text="@string/button_4"
-                    android:textColor="#ffffff"
-                    android:onClick="playSound"/>
-            </TableRow>
-            <TableRow>
-                <Button
-                    android:id="@+id/button5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_column="0"
-                    android:background="@color/colorPrimary"
-                    android:padding="20dp"
-                    android:layout_margin="10dp"
-                    android:text="@string/button_5"
-                    android:textColor="#ffffff"
-                    android:onClick="playSound"/>
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_margin="10dp"
+                android:background="@drawable/button"
+                android:onClick="playSound"
+                android:padding="40dp"
+                android:text="McCree"
+                android:textColor="#ffffff" />
+        </TableRow>
 
-                <Button
-                    android:id="@+id/button6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_column="0"
-                    android:background="@color/colorPrimary"
-                    android:padding="20dp"
-                    android:layout_margin="10dp"
-                    android:text="@string/button_6"
-                    android:textColor="#ffffff"
-                    android:onClick="playSound"/>
-            </TableRow>
-            <TableRow>
-                <Button
-                    android:id="@+id/button7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_column="0"
-                    android:background="@color/colorPrimary"
-                    android:padding="20dp"
-                    android:layout_margin="10dp"
-                    android:text="@string/button_7"
-                    android:textColor="#ffffff"
-                    android:onClick="playSound"/>
+        <TableRow>
 
-                <Button
-                    android:id="@+id/button8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_column="0"
-                    android:background="@color/colorPrimary"
-                    android:padding="20dp"
-                    android:layout_margin="10dp"
-                    android:text="@string/button_8"
-                    android:textColor="#ffffff"
-                    android:onClick="playSound"/>
-            </TableRow>
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_margin="10dp"
+                android:background="@drawable/button"
+                android:onClick="playSound"
+                android:padding="40dp"
+                android:text="Game Over"
+                android:textColor="#ffffff" />
 
-        </TableLayout>
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_margin="10dp"
+                android:background="@drawable/button"
+                android:onClick="playSound"
+                android:padding="40dp"
+                android:text="Hive"
+                android:textColor="#ffffff" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_margin="10dp"
+                android:background="@drawable/button"
+                android:onClick="playSound"
+                android:padding="40dp"
+                android:text="Mom"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_margin="10dp"
+                android:background="@drawable/button"
+                android:onClick="playSound"
+                android:padding="40dp"
+                android:text="Tranquility"
+                android:textColor="#ffffff" />
+        </TableRow>
+
+    </TableLayout>
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
-        android:layout_width="match_parent"
+        android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
@@ -131,6 +139,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:subtitle="Maren VanDenTop and Stacy Vaughn"
+        app:menu="@menu/menu_main"
         app:title="Soundboard App" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
