@@ -1,21 +1,13 @@
 package com.example.testapp
 
-import android.content.Intent
 import android.media.MediaPlayer
 import android.os.Bundle
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
-import androidx.appcompat.app.AppCompatActivity
-import android.view.Menu
 import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
 import android.view.View
-import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.widget.AppCompatButton
-import androidx.navigation.fragment.findNavController
 import com.example.testapp.R.*
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.coroutines.NonCancellable.start
 
 class MainActivity : AppCompatActivity() {
 
@@ -42,5 +34,12 @@ class MainActivity : AppCompatActivity() {
         Toast.makeText(this@MainActivity, getTextBtn.text, Toast.LENGTH_SHORT).show()
         var mediaPlayer: MediaPlayer? = MediaPlayer.create(applicationContext, source)
         mediaPlayer?.start()
+    }
+    fun credits(item: MenuItem) {
+        setContentView(layout.credits)
+    }
+
+    fun home(item: MenuItem) {
+        setContentView(layout.activity_main)
     }
 }
